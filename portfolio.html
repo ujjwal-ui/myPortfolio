@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+
+        #sectionOne, #sectionThree {
+            width: 100%;
+            height: 100%;
+        }
+
+        #sectionOne {
+            background-color: white;
+        }
+
+         #sectionTwo {
+            background-color: beige;
+            height: 50vh;
+            background-color: #EEF5FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+        #sectionThree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav {
+            width: 100%;
+            height: 70px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+
+        .nav .blockTwo {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .mainContainer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .main {
+            margin-top: 150px;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .heading {
+            font-size: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mainBlockOne {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .para {
+            font-size: 18px;
+        }
+
+        .mainBlockTwo img {
+            width: 340px;
+        }
+
+
+        .mainButton button{ 
+            width: 240px;
+            padding: 20px;
+            border: none;
+            outline: none;
+            background-color: #A3B763;
+            color: white;
+        }
+
+        #sectionTwo .cardContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .card {
+            width: 400px;
+            height: 250px;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .aboveCard {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cardContainer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sectionTwoMain .aboveCard {
+            margin-bottom: 20px;
+        }
+
+        .aboveCard div:nth-child(1) {
+            color: black;
+        }
+
+        .aboveCard div:nth-child(2) {
+            color: blue;
+            font-size: 13px;
+        }
+
+
+        .sectionThreeMain {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 30px;
+        }
+
+        .sectionThreeBlockTwo, .sectionThreeBlockThree, .sectionThreeBlockFour {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .detailsContainer {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        .yearContainer {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        .yearContainer div:nth-child(1) {
+            background-color: #280274;
+            padding: 5px 14px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        
+        .yearContainer div:nth-child(2) {
+            color: grey;
+        }
+
+        hr {
+            color: #EFECEC;
+        }
+
+        .sectionThreeFooter {
+            width: 100%;
+            height: 300px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .sectionThreeFooter img {
+            width: 28px;
+            height: 27px;
+            mix-blend-mode: color-burn;
+        }
+
+        .iconsContainer {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 40px;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-bottom: 48px;
+            margin-top: 5px;
+            font-size: 13px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <section id="sectionOne">
+        <div class="nav">
+            <div class="blockOne">
+                
+            </div>
+            <div class="blockTwo">
+                <div>Works</div>
+                <div>Blog</div>
+                <div>Contact</div>
+            </div>
+        </div>
+
+
+        <div class="mainContainer">
+            <div class="main">
+                <div class="mainBlockOne">
+                    <div class="heading">
+                        <pre>Hi, I am John,
+Creative Technologist
+                        </pre>
+                    <div class="para">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vitae dolore
+                            eum iusto aspernatur sed dicta eveniet repudiandae! Repellat harum voluptatibus 
+                            voluptas sunt totam commodi.
+                        </p>
+                    </div>
+
+                    <div class="mainButton">
+                        <button>Download Resume</button>
+                    </div>
+                </div>
+                <div class="mainBlockTwo">
+                    <img src="./img-1.png" alt="error-loading" />
+                </div>
+            </div>
+        
+        </div>
+
+    </section>
+
+    <section id="sectionTwo">
+        <div class="sectionTwoMain">    
+                <div class="aboveCard">
+                    <div>Recent posts</div>
+                    <div>View all</div>
+                </div>
+                <div class="cardContainer">
+                    <div class="card">
+                            <h3>Making a design system from scratch</h3>
+                            <p>12 Feb 2020 | Design Platform</p>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Accusamus similique explicabo debitis saepe quaerat iure magni minima,
+                                nemo est eaque ea ducimus nesciunt fuga?</p>
+                    </div>
+                    <div class="card">
+                        <h3>Making a design system from scratch</h3>
+                        <p>12 Feb 2020 | Design Platform</p>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Accusamus similique explicabo debitis saepe quaerat iure magni minima,
+                            nemo est eaque ea ducimus nesciunt fuga?</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="sectionThree">
+        <div class="sectionThreeMain">
+                    <div class="sectionThreeBlockOne">
+                           <h3>Featured works</h3>
+                    </div>
+                    <div class="sectionThreeBlockTwo">
+                        <div class="imgContainer">
+                            <img src="./img-2.png" />
+                        </div>
+                        <div class="detailsContainer">
+                            <div><h3>Designing Dashboard</h3></div>
+                            <div class="yearContainer">
+                                <div>2020</div>
+                                <div>Dashboard</div>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, 
+                                    enim quia vel delectus unde ut ea laborum. Cumque minima, porro exercitationem, 
+                                    saepe mollitia iusto facilis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="sectionThreeBlockThree">
+                        <div class="imgContainer">
+                            <img src="./img-3.png" />
+                        </div>
+                        <div class="detailsContainer">
+                            <div><h3>Designing Dashboard</h3></div>
+                            <div class="yearContainer">
+                                <div>2020</div>
+                                <div>Dashboard</div>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, 
+                                    enim quia vel delectus unde ut ea laborum. Cumque minima, porro exercitationem, 
+                                    saepe mollitia iusto facilis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="sectionThreeBlockFour">
+                        <div class="imgContainer">
+                            <img src="./img-4.png" />
+                        </div>
+                        <div class="detailsContainer">
+                            <div><h3>Designing Dashboard</h3></div>
+                            <div class="yearContainer">
+                                <div>2020</div>
+                                <div>Dashboard</div>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, 
+                                    enim quia vel delectus unde ut ea laborum. Cumque minima, porro exercitationem, 
+                                    saepe mollitia iusto facilis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+        </div>
+    </section>
+
+    <div class="sectionThreeFooter">
+       <div class="iconsContainer">
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/2048px-Facebook_logo_36x36.svg.png" />
+            </div>
+            <div>
+                <img src="https://static-00.iconduck.com/assets.00/social-instagram-icon-1024x1024-qshv5qmi.png"/>
+            </div>
+            <div >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Gmail_Icon_%282013-2020%29.svg/1280px-Gmail_Icon_%282013-2020%29.svg.png" />
+            </div>
+
+            <div>
+                <img src="https://toppng.com/uploads/preview/twitter-x-new-logo-icon-png-11692480121koxvq54was.webp" />
+            </div>
+       </div> 
+       <div class="copyright">
+            Copyright @2024 All rights reserved
+       </div>
+
+    </div>
+
+</body>
+</html>
