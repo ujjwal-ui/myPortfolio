@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: Arial, Helvetica, sans-serif
         }
 
         body {
@@ -73,7 +73,7 @@
 
         .main {
             margin-top: 150px;
-            width: 70%;
+            width: 90%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -85,23 +85,29 @@
             font-size: 60px;
             display: flex;
             flex-direction: column;
+            font-weight: bold;
         }
 
         .mainBlockOne {
+            width: 100%;
             display: flex;
             justify-content: center;
             flex-direction: row;
             align-items: center;
             gap: 40px;
+            padding: 0 300px;
         }
 
         .para {
             font-size: 18px;
+            font-weight: bold;
         }
 
         .mainBlockTwo {
             border-radius: 50%;
             box-shadow: -5px 2px -17px #eee;
+            display: inline-block;
+            margin-left: 140px;
         }
 
         .mainBlockTwo img {
@@ -116,42 +122,60 @@
             outline: none;
             background-color: #EE4266;
             color: white;
+            font-size: 15px;
+            font-weight: bold;
         }
 
         #sectionTwo .cardContainer {
             width: 100%;
-            display: flex;
-            flex-direction: row;
+           text-align: center;
         }
 
         .card {
-            width: 400px;
-            height: 250px;
+            width: 30%;
+            height: 270px;
+            display: inline-block;
+            /* height: 250px; */
             background-color: white;
             padding: 20px;
-            display: flex;
+            /* display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-evenly; */
+            margin: 20px;
+            text-align: left;
         }
 
         .aboveCard {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
+            text-align: center;
+        }
+
+        .aboveCard span:nth-child(1){
+            margin-right: 52%;
+        }
+
+        .aboveCard div {
+            display: inline-block;
+            width: 50%;
+        }
+
+        .aboveCard div:nth-child(2) {
+            text-align: right;
         }
 
         .cardContainer {
             width: 100%;
             height: 100%;
-            display: flex;
+            text-align: center;
+            /* display: flex;
             flex-direction: row;
             gap: 40px;
             justify-content: center;
-            align-items: center;
+            align-items: center; */
         }
 
         .sectionTwoMain .aboveCard {
-            margin-bottom: 20px;
+            margin: auto;
         }
 
         .aboveCard div:nth-child(1) {
@@ -165,25 +189,52 @@
 
 
         .sectionThreeMain {
-            width: 70%;
+            width: 80%;
             height: 100%;
-            display: flex;
+            /* display: flex;
             flex-direction: column;
             padding: 20px;
-            gap: 30px;
+            gap: 30px; */
         }
 
-        .sectionThreeBlockTwo, .sectionThreeBlockThree, .sectionThreeBlockFour {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 20px;
+        
+        .sectionThreeMain .sectionThreeBlockOne, .sectionThreeBlockTwo, .sectionThreeBlockThree, .sectionThreeBlockFour {
+            margin: 30px 0;
         }
 
-        .detailsContainer {
-            display: flex;
-            justify-content: space-evenly;
-            flex-direction: column;
+        .sectionThreeBlockTwo .imgContainer, .detailsContainer {
+            display: inline-block;
+        }
+
+        .sectionThreeBlockTwo .detailsContainer {
+            width: 70%;
+            float: right;
+            margin-right: 87px;
+        }
+
+        .sectionThreeBlockThree .imgContainer, .detailsContainer {
+            display: inline-block;
+        }
+        .sectionThreeBlockThree .detailsContainer {
+            width: 70%;
+            float: right;
+            margin-right: 87px;
+            margin-top: 3px
+        }
+
+        .sectionThreeBlockFour .imgContainer, .detailsContainer {
+            display: inline-block;
+        }
+
+        .sectionThreeBlockFour .detailsContainer {
+            width: 70%;
+            float: right;
+            margin-right: 87px;
+
+        }
+
+        .yearContainer {
+            margin: 20px 0;
         }
 
         .yearContainer {
@@ -194,7 +245,7 @@
 
         .yearContainer div:nth-child(1) {
             background-color: #280274;
-            padding: 5px 14px;
+            padding: 2px 14px;
             border-radius: 20px;
             color: white;
         }
@@ -205,13 +256,13 @@
         }
 
         hr {
-            color: #EFECEC;
+            color: #F6F5F5;
         }
 
         .sectionThreeFooter {
             width: 100%;
             height: 300px;
-            margin-top: 30px;
+            margin-top: 20px;
             display: flex;
             justify-content: flex-end;
             flex-direction: column;
@@ -236,6 +287,15 @@
             margin-bottom: 48px;
             margin-top: 5px;
             font-size: 13px;
+        }
+
+        .heading pre {
+            height: 170px;
+            width: 500px;
+        }
+
+        .card .cardHeading, .cardDate, .cardPara {
+            margin: 20px 0;
         }
 
     </style>
@@ -287,23 +347,29 @@ Creative Technologist
     <section id="sectionTwo">
         <div class="sectionTwoMain">    
                 <div class="aboveCard">
-                    <div>Recent posts</div>
-                    <div>View all</div>
+                    <span>Recent posts</span>
+                    <span>View all</span>
                 </div>
                 <div class="cardContainer">
                     <div class="card">
-                            <h3>Making a design system from scratch</h3>
-                            <p>12 Feb 2020 | Design Platform</p>
+                            <h3 class="cardHeading" >
+                                <pre>Making a design system from 
+scratch</pre>
+                            </h3>
+                            <p class="cardDate">12 Feb 2020 | Design Platform</p>
 
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            <p class="cardPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                                 Accusamus similique explicabo debitis saepe quaerat iure magni minima,
                                 nemo est eaque ea ducimus nesciunt fuga?</p>
                     </div>
                     <div class="card">
-                        <h3>Making a design system from scratch</h3>
-                        <p>12 Feb 2020 | Design Platform</p>
+                        <h3 class="cardHeading">
+                            <pre>Making a design system from 
+scratch</pre>
+                        </h3>
+                        <p class="cardDate">12 Feb 2020 | Design Platform</p>
 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        <p class="cardPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Accusamus similique explicabo debitis saepe quaerat iure magni minima,
                             nemo est eaque ea ducimus nesciunt fuga?</p>
                     </div>
@@ -381,17 +447,18 @@ Creative Technologist
     <div class="sectionThreeFooter">
        <div class="iconsContainer">
             <div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/2048px-Facebook_logo_36x36.svg.png" />
+                <img src="./fb.png" />
+                
             </div>
             <div>
-                <img src="https://static-00.iconduck.com/assets.00/social-instagram-icon-1024x1024-qshv5qmi.png"/>
+                <img src="./insta-2.png"/>
             </div>
             <div >
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Gmail_Icon_%282013-2020%29.svg/1280px-Gmail_Icon_%282013-2020%29.svg.png" />
+                <img src="./X.png" />
             </div>
 
             <div>
-                <img src="https://toppng.com/uploads/preview/twitter-x-new-logo-icon-png-11692480121koxvq54was.webp" />
+                <img src="./gmail-2.jpg" />
             </div>
        </div> 
        <div class="copyright">
